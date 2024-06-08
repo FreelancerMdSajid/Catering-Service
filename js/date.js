@@ -1,4 +1,4 @@
-function date() {
+function dateShow() {
     setInterval(function() {
         var today=new Date(),
         h=today.getHours(),
