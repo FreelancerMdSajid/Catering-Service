@@ -11,8 +11,7 @@
 
 /* FAQ CSS  */
 .faqQuestion {
-    background-color: #777;
-    color: white;
+    background-color: #13ac13;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -22,7 +21,7 @@
     font-size: 15px;
 }
 .acativefaq, .faqQuestion:hover {
-    background-color: #555;
+    background-color: #086b08;
 }
 .faqQuestion:after {
     content: '\002B';

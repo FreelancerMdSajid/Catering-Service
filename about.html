@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body onload="dateShow();">
+<body onload="timeShow();">
   <!-- Header -->
   <header class="container-fluid bg-primary text-center p-3">
     <h1>BD Food Shop</h1>
@@ -19,7 +19,7 @@
   </header>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">BD Food Shop</a>
 
@@ -50,9 +50,9 @@
   <!-- Main content  -->
   <main>
     <!-- Stuff Profile Start  -->
-    <section class="bg-danger container-fluid text-center p-5">
-      <h1>Staff Profile</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section class="bg-success-subtle container-fluid text-center p-5">
+      <h1 class="border-primary border-bottom pb-2">Staff Profile</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
         <div class="col">
           <div class="card h-100">
             <img src="img/customer1.jpg" class="card-img-top" alt="...">
@@ -87,14 +87,14 @@
     </section>
 
     <!-- About Company  -->
-    <section class="bg-info text-center p-4">
+    <section class="bg-secondary-subtle text-center py-4">
       <div class="container">
-        <h1>About Comany</h1>
-        <div class="row bg-danger">
+        <h1 class="border-primary border-bottom pb-2">About Comany</h1>
+        <div class="row pt-4">
           <div class="col-md-6">
             <img class="img-fluid" src="img/customer1.jpg" alt="company image">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 border border-primary">
             <h2>Company Name</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus fugit tempore sint dolores
               architecto iure odio ea labore aperiam accusantium!</p>
@@ -112,12 +112,15 @@
   </main>
 
   <!-- Footer  -->
-  <footer>
-    <h6 class="text-center" id="text"></h6>
+  <footer class="bg-primary p-4">
+    <div class="text-center">
+      <h6 id="timeShow"></h6>
+    </div>
   </footer>
+
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/date.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body onload="dateShow();">
+<body onload="timeShow();">
   <!-- Header -->
   <header class="container-fluid bg-primary text-center p-3">
     <h1>BD Food Shop</h1>
@@ -19,7 +19,7 @@
   </header>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">BD Food Shop</a>
 
@@ -50,8 +50,8 @@
   <!-- Main content  -->
   <main>
     <!-- Contact Area Start  -->
-    <section class="bg-success p-4">
-      <form class="text-center container border p-3">
+    <section class="bg-success-subtle p-4">
+      <form class="text-center container border border-primary p-3">
         <h1 class="text-center">Contact Form</h1>
         <div class="mb-3">
           <label for="address" class="form-label">Address</label>
@@ -79,14 +79,15 @@
   </main>
 
   <!-- Footer  -->
-  <footer>
-    <h6 class="text-center" id="text"></h6>
+  <footer class="bg-primary p-4">
+    <div class="text-center">
+      <h6 id="timeShow"></h6>
+    </div>
   </footer>
 
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/date.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

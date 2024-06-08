@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="dateShow();">
+<body onload="timeShow();">
   <!-- Header -->
   <header class="container-fluid bg-primary text-center p-3">
     <h1>BD Food Shop</h1>
@@ -20,7 +20,7 @@
   </header>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">BD Food Shop</a>
 
@@ -50,7 +50,7 @@
 
   <main>
     <!-- FAQ -->
-    <section class="bg-success p-4">
+    <section class="p-4 bg-success-subtle">
       <h3 class="text-center border-bottom pb-2">Frequenty Asked Question</h3>
       <button class="faqQuestion">What types of events does BD Food Shop cater?</button>
       <div class="faqAnswer">
@@ -85,15 +85,15 @@
   </main>
 
   <!-- Footer  -->
-  <footer>
-    <h6 class="text-center" id="text"></h6>
+  <footer class="bg-primary p-4">
+    <div class="text-center">
+      <h6 id="timeShow"></h6>
+    </div>
   </footer>
 
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/script.js"></script> -->
-  <script src="js/faq.js"></script>
-  <script src="js/date.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
