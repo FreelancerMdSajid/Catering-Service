@@ -63,6 +63,10 @@
   background-color: #f8c8dc;
   padding: 2rem 0;
 }
+.customer-feedback img {
+  width: 150px;
+  height: 150px;
+}
 
 .gallery {
   background-color: #e0f7f4;

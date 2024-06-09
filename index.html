@@ -42,6 +42,61 @@
 
   <!-- Main content  -->
   <main>
+    <section class="food-menu">
+      <div class="container">
+        <h2 class="text-center mb-4">Food Menu</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Chicken Burger">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Burger</h5>
+                <p class="card-text">A chicken burger makes for a quick midweek meal or weekend BBQ's with friends!
+                  Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion,
+                  avocado, lettuce, tomato and garlic mayo.</p>
+                <p class="btn btn-primary">price: 299TK</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Meat Box">
+              <div class="card-body">
+                <h5 class="card-title">Meat Box</h5>
+                <p class="card-text">Think outside the Box and save yourself some time and effort by getting your
+                  favourite Meat Box delivered. Upgrade to subscription for meat on repeat! Choose your delivery
+                  frequency and leave the rest to us. Enjoy doorstep delivery on your terms, plus get free delivery as a
+                  big</p>
+                <p class="btn btn-primary">price: 155TK</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sandwich">
+              <div class="card-body">
+                <h5 class="card-title">Sandwich</h5>
+                <p class="card-text">A sandwich is a dish typically consisting of vegetables, sliced cheese or meat,
+                  placed on or between slices of bread, or more generally any dish wherein bread serves as a container
+                  or wrapper for another food type.</p>
+                <p class="btn btn-primary">price: 350TK</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pasta">
+              <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <p class="card-text">Pasta is a type of food typically made from an unleavened dough of wheat flour
+                  mixed with water or eggs, and formed into sheets or other shapes.</p>
+                <p class="btn btn-primary">price: 359TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Food Menu Start  -->
     <section class="bg-success text-center p-4">
       <h1>Food Menu</h1>
@@ -111,21 +166,43 @@
     </section>
 
     <!-- Customer Feedback  -->
-    <section class="bg-danger-subtle container-fluid p-4 align-items-center">
-      <h1 class="text-center">Customer Feedback</h1>
-      <div class="row justify-content-md-center">
-        <div class="col-md-3">
-          <img class="img-fluid img-thumbnail" src="img/customer1.jpg" alt="Customer">
-          <h5 class="p-3 justify">"I am very satisfied." </h5>
+    <section class="customer-feedback text-center">
+      <div class="container">
+        <h2 class="mb-4">Customer Feedback</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/customer1.jpg" class="rounded-circle mb-2 img-thumbnail" alt="Customer 1">
+            <p>"I am very satisfied."</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/customer2.jpg" class="rounded-circle mb-2 img-thumbnail" alt="Customer 2">
+            <p>"I am very satisfied with the product."</p>
+          </div>
         </div>
-        <div class="col-md-3">
-          <img class="img-fluid img-thumbnail" src="img/customer2.jpg" alt="Customer">
-          <h5 class="p-3 justify">"I am very satisfied with the product." </h5>
-        </div>
-      </div>
       </div>
     </section>
 
+
+
+    <section class="gallery text-center">
+      <div class="container">
+        <h2 class="mb-4">Gallery</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/300x200" class="img-fluid mb-2" alt="Gallery 1">
+          </div>
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/300x200" class="img-fluid mb-2" alt="Gallery 2">
+          </div>
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/300x200" class="img-fluid mb-2" alt="Gallery 3">
+          </div>
+          <div class="col-md-3">
+            <img src="https://via.placeholder.com/300x200" class="img-fluid mb-2" alt="Gallery 4">
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Gallery Area Start  -->
     <section class="bg-success-subtle text-center p-4">
       <div class="container">
@@ -153,6 +230,14 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>Current Time = <span id="current-time"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('current-time').innerText = new Date().toLocaleTimeString();
+  </script>
 
   <!-- Footer  -->
   <footer class="bg-primary p-4">
