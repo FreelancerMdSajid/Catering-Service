@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Food Shop</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header h2 {
+            margin: 10px 0;
+        }
+        .navbar {
+            justify-content: center;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .navbar a {
+            color: #000;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        .faq {
+            background-color: #f0f4f7;
+            padding: 20px;
+        }
+        .faq h3 {
+            margin-top: 0;
+        }
+        .faq dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .faq dd {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>BD Food Shop</h1>
+    <h2>Authentic Flavors, Exceptional Catering</h2>
+    <p>Elevating your events, one delicious bite at a time</p>
+    <p>EST. 2024</p>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">BD Food Shop</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="faq container mt-4">
+    <h3>Frequently Asked Question</h3>
+    <dl>
+        <dt>What types of events does BD Food Shop cater?</dt>
+        <dd>BD Food Shop caters a wide variety of events! We can handle everything from corporate lunches and business meetings to weddings, birthday parties, graduation celebrations, and more.</dd>
+        
+        <dt>Do you offer customizable menus?</dt>
+        <dd>Absolutely! We understand that every event is unique, which is why we work with you to create a menu that perfectly fits your taste and budget. Whether you have dietary restrictions or a specific theme in mind, we can create a menu that exceeds your expectations.</dd>
+        
+        <dt>How far in advance do I need to order catering?</dt>
+        <dd>The ideal notice period depends on the size and complexity of your event. To ensure we have ample time to prepare the freshest food and fulfill your specific requests, we recommend placing your order at least 72 hours in advance. However, if your event is on a short timeline, feel free to contact us. We'll do our best to accommodate your needs.</dd>
+        
+        <dt>Do you provide staff for catered events?</dt>
+        <dd>Yes, BD Food Shop offers a range of staffing options to ensure your event runs smoothly. We can provide servers, bartenders, and even chefs to take care of everything from food preparation and service to cleanup.</dd>
+        
+        <dt>What are your payment terms?</dt>
+        <dd>We require a deposit of [percentage] to confirm your booking. The remaining balance is typically due [number] days before your event. We accept various payment methods for your convenience. For further details on our payment terms, please visit our "Order & Payment" page or contact us directly.</dd>
+    </dl>
+</div>
+
+<div class="footer">
+    <p>Current Time = <span id="currentTime"></span></p>
+</div>
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString('en-US', { hour12: false });
+        document.getElementById('currentTime').textContent = formattedTime;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+</body>
+</html>

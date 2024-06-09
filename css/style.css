@@ -1,42 +1,79 @@
 .card-text {
-    height: 200px;
-    overflow: hidden;
-    text-align: justify;
+  height: 200px;
+  overflow: hidden;
+  text-align: justify;
 }
 .justify {
-    text-align: center;
-    height: 100px;
+  text-align: center;
+  height: 100px;
 }
-
 
 /* FAQ CSS  */
 .faqQuestion {
-    background-color: #bacec5;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  background-color: #bacec5;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
-.acativefaq, .faqQuestion:hover {
-    background-color: #9eb1a8;
+.acativefaq,
+.faqQuestion:hover {
+  background-color: #9eb1a8;
 }
 .faqQuestion:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 .activefaq:after {
-    content: "\2212";
+  content: "\2212";
 }
 .faqAnswer {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* More  */
+.navbar,
+.footer {
+  background-color: #0056b3;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.food-menu {
+  background-color: #006400;
+  color: white;
+  padding: 2rem 0;
+}
+
+.customer-feedback {
+  background-color: #f8c8dc;
+  padding: 2rem 0;
+}
+
+.gallery {
+  background-color: #e0f7f4;
+  padding: 2rem 0;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
 }

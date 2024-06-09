@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Food Shop - Contact</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .navbar, .footer {
+            background-color: #0056b3;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .contact-form {
+            background-color: #e0f7f4;
+            padding: 2rem 0;
+        }
+        .contact-form form {
+            background-color: #c8e6e0;
+            padding: 2rem;
+            border-radius: 5px;
+            border: 1px solid #0056b3;
+        }
+        .form-control {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">BD Food Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="text-center bg-primary text-white py-5">
+    <h1>BD Food Shop</h1>
+    <p>Authentic Flavors, Exceptional Catering</p>
+    <p>Elevating your events, one delicious bite at a time</p>
+    <p>EST. 2024</p>
+</header>
+
+<section class="contact-form">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Form</h2>
+        <form>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Current Time = <span id="current-time"></span></p>
+</footer>
+
+<script>
+    document.getElementById('current-time').innerText = new Date().toLocaleTimeString();
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
