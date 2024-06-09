@@ -8,6 +8,31 @@
   <!-- bootstrap CSS Link  -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .navbar, .footer {
+        background-color: #0056b3;
+        color: white;
+    }
+    .footer {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .staff-profile {
+        background-color: #e0f7f4;
+        padding: 2rem 0;
+    }
+    .about-company {
+        background-color: #f0f0f5;
+        padding: 2rem 0;
+    }
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .section-title {
+        margin-bottom: 1rem;
+    }
+</style>
 </head>
 
 <body onload="timeShow();">
@@ -108,6 +133,72 @@
       <h6 id="timeShow"></h6>
     </div>
   </footer>
+
+  <section class="staff-profile">
+    <div class="container">
+        <h2 class="text-center section-title">Staff Profile</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Staff 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Staff 1</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Staff 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Staff 2</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Staff 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Staff 3</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-company">
+    <div class="container">
+        <h2 class="text-center section-title">About Company</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" class="img-fluid mb-2" alt="Company Image">
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Company Name</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus fugit tempore sint dolores architecto iure odio ea labore aperiam accusantium!</p>
+                        <h6>About</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minus ex. Obcaecati magnam eligendi dignissimos et, nihil aliquid facilis quas!</p>
+                        <h6>About</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minus ex. Obcaecati magnam eligendi dignissimos et, nihil aliquid facilis quas!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Current Time = <span id="current-time"></span></p>
+</footer>
+
+<script>
+    document.getElementById('current-time').innerText = new Date().toLocaleTimeString();
+</script>
 
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>

@@ -81,6 +81,20 @@
     </div>
   </footer>
 
+  <div class="footer">
+    <p>Current Time = <span id="currentTime"></span></p>
+</div>
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString('en-US', { hour12: false });
+        document.getElementById('currentTime').textContent = formattedTime;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
