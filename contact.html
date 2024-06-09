@@ -8,32 +8,9 @@
   <!-- bootstrap CSS Link  -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .navbar, .footer {
-        background-color: #0056b3;
-        color: white;
-    }
-    .footer {
-        text-align: center;
-        padding: 1rem 0;
-    }
-    .contact-form {
-        background-color: #e0f7f4;
-        padding: 2rem 0;
-    }
-    .contact-form form {
-        background-color: #c8e6e0;
-        padding: 2rem;
-        border-radius: 5px;
-        border: 1px solid #0056b3;
-    }
-    .form-control {
-        margin-bottom: 1rem;
-    }
-</style>
 </head>
 
-<body onload="timeShow();">
+<body onload="updateTime();">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
@@ -63,71 +40,33 @@
 
   <!-- Main content  -->
   <main>
-    <!-- Contact Area Start  -->
-    <section class="bg-success-subtle p-4">
-      <form class="text-center container border border-primary p-3">
-        <h1 class="text-center">Contact Form</h1>
-        <div class="mb-3">
-          <label for="address" class="form-label">Address</label>
-          <input type="text" class="form-control" id="address" aria-describedby="emailHelp">
-        </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-
-        </div>
-
-        <div class="mb-3">
-          <label for="phone" class="form-label">Phone</label>
-          <input type="number" class="form-control" id="phone" aria-describedby="emailHelp">
-
-        </div>
-
-
-
-        <button type="submit" class="btn btn-primary w-100" onclick="alertMassage()">Submit</button>
-      </form>
-
+    <!-- Contact -->
+    <section class="contact-form">
+      <div class="container">
+        <h2 class="text-center mb-4"><span class="heading-border">Contact Form</span></h2>
+        <form>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter your address">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <button type="submit" class="btn btn-primary w-100" onclick="alertMassage()">Submit</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <!-- Footer  -->
-  <footer class="bg-primary p-4">
-    <div class="text-center">
-      <h6 id="timeShow"></h6>
-    </div>
+  <footer class="footer">
+    <p>Current Date & Time = <span id="dateTime"></span></p>
   </footer>
-
-
-  <section class="contact-form">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Form</h2>
-        <form>
-            <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Enter your address">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </form>
-    </div>
-</section>
-
-<footer class="footer">
-    <p>Current Time = <span id="current-time"></span></p>
-</footer>
-
-<script>
-    document.getElementById('current-time').innerText = new Date().toLocaleTimeString();
-</script>
 
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>

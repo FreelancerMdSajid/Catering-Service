@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="timeShow();">
+<body onload="updateTime();">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
@@ -38,8 +38,6 @@
     <p>EST. 2024</p>
   </header>
 
-
-
   <!-- Main content  -->
   <main>
     <!-- Food Menu -->
@@ -51,10 +49,12 @@
             <div class="card">
               <img src="img/food/Chicken-Burger.jpg" class="card-img-top" alt="Chicken Burger">
               <div class="card-body">
-                <h5 class="card-title">Chicken Burger</h5>
-                <p class="card-text">A chicken burger makes for a quick midweek meal or weekend BBQ's with friends!
+                <h5 class="card-title text-center">Chicken Burger</h5>
+                <p class="card-text card-text-custom">A chicken burger makes for a quick midweek meal or weekend BBQ's with friends!
                   Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion,
                   avocado, lettuce, tomato and garlic mayo.</p>
+              </div>
+              <div class="card-footer">
                 <p class="btn btn-primary w-100">price: 299TK</p>
               </div>
             </div>
@@ -63,11 +63,13 @@
             <div class="card">
               <img src="img/food/Meat Box.jpg" class="card-img-top" alt="Meat Box">
               <div class="card-body">
-                <h5 class="card-title">Meat Box</h5>
-                <p class="card-text">Think outside the Box and save yourself some time and effort by getting your
+                <h5 class="card-title text-center">Meat Box</h5>
+                <p class="card-text card-text-custom">Think outside the Box and save yourself some time and effort by getting your
                   favourite Meat Box delivered. Upgrade to subscription for meat on repeat! Choose your delivery
                   frequency and leave the rest to us. Enjoy doorstep delivery on your terms, plus get free delivery as a
                   big</p>
+              </div>
+              <div class="card-footer">
                 <p class="btn btn-primary w-100">price: 155TK</p>
               </div>
             </div>
@@ -76,10 +78,12 @@
             <div class="card">
               <img src="img/food/Sandwich.jpg" class="card-img-top" alt="Sandwich">
               <div class="card-body">
-                <h5 class="card-title">Sandwich</h5>
-                <p class="card-text">A sandwich is a dish typically consisting of vegetables, sliced cheese or meat,
+                <h5 class="card-title text-center">Sandwich</h5>
+                <p class="card-text card-text-custom">A sandwich is a dish typically consisting of vegetables, sliced cheese or meat,
                   placed on or between slices of bread, or more generally any dish wherein bread serves as a container
                   or wrapper for another food type.</p>
+              </div>
+              <div class="card-footer">
                 <p class="btn btn-primary w-100">price: 350TK</p>
               </div>
             </div>
@@ -88,9 +92,11 @@
             <div class="card">
               <img src="img/food/pasta.jpg" class="card-img-top" alt="Pasta">
               <div class="card-body">
-                <h5 class="card-title">Pasta</h5>
-                <p class="card-text">Pasta is a type of food typically made from an unleavened dough of wheat flour
+                <h5 class="card-title text-center">Pasta</h5>
+                <p class="card-text card-text-custom">Pasta is a type of food typically made from an unleavened dough of wheat flour
                   mixed with water or eggs, and formed into sheets or other shapes.</p>
+              </div>
+              <div class="card-footer">
                 <p class="btn btn-primary w-100">price: 359TK</p>
               </div>
             </div>
@@ -150,20 +156,11 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Current Time = <span id="current-time"></span></p>
-  </footer>
-
-  <script>
-    document.getElementById('current-time').innerText = new Date().toLocaleTimeString();
-  </script>
-
   <!-- Footer  -->
-  <footer class="bg-primary p-4">
-    <div class="text-center">
-      <h6 id="timeShow"></h6>
-    </div>
+  <footer class="footer">
+    <p>Current Date & Time = <span id="dateTime"></span></p>
   </footer>
+
   <!-- All JS File Link  -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

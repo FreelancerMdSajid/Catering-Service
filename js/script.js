@@ -1,4 +1,20 @@
-// FAQ
+// Show current date and time
+const dateTime = document.getElementById("dateTime");
+
+function updateDateTime() {
+  const now = new Date();
+  dateTime.textContent = now.toLocaleString();
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+// Contact Form  Submit Alert
+function alertMassage() {
+  confirm("You Have Submitted Successfully");
+}
+
+// FAQ Page
 var faqQuestion = document.getElementsByClassName("faqQuestion");
 var i;
 for (i = 0; i < faqQuestion.length; i++) {
@@ -12,28 +28,4 @@ for (i = 0; i < faqQuestion.length; i++) {
       faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
     }
   });
-}
-
-// Show Time
-function timeShow() {
-  setInterval(function () {
-    var today = new Date(),
-      h = today.getHours(),
-      m = today.getMinutes(),
-      s = today.getSeconds();
-    let time = "Current Time = " + h + ":" + m + ":" + s;
-    document.getElementById("timeShow").innerHTML = time;
-  }, 1000);
-}
-
-// function date() {
-//     setInterval(function() {
-//         document.getElementById("text").innerHTML = new Date().toString();
-
-//     },1000);
-// }
-
-// Contact Form  Submit Alert
-function alertMassage() {
-  confirm("You Have Submitted Successfully");
 }

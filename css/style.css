@@ -1,11 +1,88 @@
-.card-text {
+/* All Pages ----------- Navigation Bar & Footer */
+.navbar,
+.footer {
+  background-color: #0056b3;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* All Pages ----------- Section Heading Style  */
+.heading-border {
+  border-bottom: 4px solid #212529;
+}
+
+/* Index Page  */
+.food-menu {
+  background-color: #006400;
+  color: white;
+  padding: 2rem 0;
+}
+
+.card-text-custom {
   height: 200px;
   overflow: hidden;
   text-align: justify;
 }
-.justify {
-  text-align: center;
-  height: 100px;
+
+.customer-feedback {
+  background-color: #f8c8dc;
+  padding: 2rem 0;
+}
+.customer-feedback img {
+  width: 150px;
+  height: 150px;
+}
+
+.gallery {
+  background-color: #e0f7f4;
+  padding: 2rem 0;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* About Page  */
+.staff-profile {
+  background-color: #e0f7f4;
+  padding: 2rem 0;
+}
+
+.about-company {
+  background-color: #f0f0f5;
+  padding: 2rem 0;
+}
+.section-title {
+  margin-bottom: 1rem;
+}
+.card-text-justify {
+  text-align: justify;
+}
+
+/* Contact Page  */
+.contact-form {
+  background-color: #e0f7f4;
+  padding: 2rem 0;
+}
+
+.contact-form form {
+  background-color: #c8e6e0;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid #0056b3;
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }
 
 /* FAQ CSS  */
@@ -41,47 +118,3 @@
   background-color: #f1f1f1;
 }
 
-/* More  */
-.navbar,
-.footer {
-  background-color: #0056b3;
-  color: white;
-}
-
-.footer {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.food-menu {
-  background-color: #006400;
-  color: white;
-  padding: 2rem 0;
-}
-
-.customer-feedback {
-  background-color: #f8c8dc;
-  padding: 2rem 0;
-}
-.customer-feedback img {
-  width: 150px;
-  height: 150px;
-}
-
-.gallery {
-  background-color: #e0f7f4;
-  padding: 2rem 0;
-}
-
-.card {
-  margin-bottom: 2rem;
-}
-
-.card img {
-  height: 200px;
-  object-fit: cover;
-}
-/* span  */
-.heading-border {
-  border-bottom: 5px solid white;
-}
