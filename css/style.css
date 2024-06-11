@@ -53,26 +53,103 @@ nav ul a:hover {
   object-fit: cover;
 }
 
-/* About Page  */
-.staff-profile {
-  background-color: #e0f7f4;
-  padding: 2rem 0;
-}
-.about-company {
-  background-color: #f0f0f5;
-  padding: 2rem 0;
-}
-.section-title {
-  margin-bottom: 1rem;
-}
-.card-text-justify {
-  text-align: justify;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------framwork help----------- */
+body {
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
 }
 
-/* Contact Page  */
+.members-Profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-item {
+  background-color: white;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.profile-item:hover {
+  transform: scale(1.05);
+}
+
+.profile-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #000000;
+}
+
+.profile-item h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.profile-item p {
+  padding: 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .profile-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-item {
+      width: 80%;
+  }
+}
+
+
+
+
+/* -------------About Page-----------  */
+/* Stuff Profile  */
+.staff-profile {
+  background-color: #e0f7f4;
+}
+/* About Company  */
+.about-company {
+  background-color: #f0f0f5;
+}
+
+/* -----------Contact Page-----------  */
 .contact-form {
   background-color: #e0f7f4;
-  padding: 2rem 0;
 }
 .contact-form form {
   background-color: #c8e6e0;
@@ -84,7 +161,7 @@ nav ul a:hover {
   margin-bottom: 1rem;
 }
 
-/* FAQ CSS  */
+/* ----------FAQ Page------------  */
 .faqQuestion {
   background-color: #bacec5;
   cursor: pointer;
